@@ -84,7 +84,7 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -155,7 +155,7 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs .page-header {
-  padding: 140px 0 80px 0;
+  padding: 100px 0 80px 0;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -164,16 +164,20 @@ section {
 
 .breadcrumbs .page-header:before {
   content: "";
-  background-color: rgba(14, 29, 52, 0.8);
+  background-color: rgba(14, 29, 52, 0.5);
   position: absolute;
   inset: 0;
 }
 
-.breadcrumbs .page-header h2 {
-  font-size: 56px;
-  font-weight: 500;
-  color: #fff;
-  font-family: var(--font-secondary);
+.breadcrumbs .page-header h4 {
+  color: #FFF;
+  font-family: var(--font-primary);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  /* 45px */
+  text-transform: uppercase;
 }
 
 .breadcrumbs .page-header p {
@@ -663,19 +667,26 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 32px;
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   color: #001f8d;
 }
 
 .about .content ul {
-  list-style: none;
+  list-style: disc;
   padding: 0;
+  padding-left: 20px;
+  margin-top: 2em;
+  ;
 }
 
 .about .content ul li {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 40px;
+  color: #000;
+  font-family: Reem Kufi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  /* 31.5px */
 }
 
 .about .content ul i {
@@ -777,6 +788,38 @@ section {
     transform: scale(1, 1);
     opacity: 0;
   }
+}
+
+.i-agree {
+  color: #000;
+  font-family: Reem Kufi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*--------------------------------------------------------------
+# ApplicationForm Section
+--------------------------------------------------------------*/
+.applogo {
+  height: 75px;
+  width: 300px;
+  object-fit: contain;
+}
+
+form {
+  color: #000;
+  font-family: Reem Kufi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+fieldset {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -1034,63 +1077,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Frequently Asked Questions Section
---------------------------------------------------------------*/
-.faq {
-  padding-top: 80px;
-}
-
-.faq .accordion-item {
-  border: 0;
-  margin-bottom: 10px;
-}
-
-.faq .accordion-collapse {
-  border: 0;
-}
-
-.faq .accordion-button {
-  padding: 15px 30px 20px 60px;
-  font-weight: 600;
-  border: 0;
-  font-size: 18px;
-  color: var(--color-default);
-  text-align: left;
-  background: rgba(14, 29, 52, 0.03);
-  border-radius: 5px;
-}
-
-.faq .accordion-button:focus {
-  box-shadow: none;
-}
-
-.faq .accordion-button:not(.collapsed) {
-  color: var(--color-primary);
-  border-bottom: 0;
-  box-shadow: none;
-}
-
-.faq .question-icon {
-  position: absolute;
-  top: 14px;
-  left: 25px;
-  font-size: 20px;
-  color: var(--color-primary);
-}
-
-.faq .accordion-button:after {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-}
-
-.faq .accordion-body {
-  padding: 0 30px 25px 60px;
-  border: 0;
-  background: rgba(14, 29, 52, 0.03);
-  border-radius: 5px;
-}
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1913,6 +1899,154 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Recent News and Events Section || AGE Creteria || Key Dates || Notes Section
+--------------------------------------------------------------*/
+
+.widget-posts-meta {
+  position: relative;
+  width: 73px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0px 2px;
+  height: 95px;
+  background: linear-gradient(45deg, #4E3EA6 0%, #6651A7 60.41%, #8D558D 100%);
+  /* border: 0.5px solid black; */
+  /* padding-bottom: 5px !important; */
+}
+
+.widget-content {
+  background-color: white;
+  color: #000;
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  /* margin-top: 20px; */
+}
+
+.month {
+  /* background: white; */
+  color: #FFF;
+  font-family: Reem Kufi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+
+.year,
+.date {
+  color: #000;
+  text-align: center;
+  font-family: Reem Kufi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  /* 22.5px */
+  letter-spacing: 0.36px;
+}
+
+.year {
+  font-size: 15px;
+  color: #01344F;
+}
+
+.widget-post {
+  overflow: hidden;
+}
+
+
+.widget-post thead {
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(45deg, #4E3EA6 0%, #6651A7 60.41%, #8D558D 100%);
+  height: 50px;
+  color: #FFF;
+}
+
+.widget-post thead th {
+  color: #FFF;
+  font-family: Reem Kufi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  background-color: transparent;
+  vertical-align: middle;
+}
+
+.widget-post tbody {
+  color: #000;
+  font-family: Reem Kufi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+/* Additional styling for hover effect */
+.widget-post tbody tr:hover {
+  background-color: #f0f0f0;
+  /* Change background color on hover */
+  box-shadow: 0px 6px 12px rgba(211, 5, 5, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.1);
+  /* Add shadows for the illusion of depth */
+  cursor: pointer;
+  color: red;
+  /* Change cursor on hover */
+}
+
+.widget-post tbody tr {
+  height: 112px;
+  /* Default height for other rows */
+  transition: all 0.3s ease;
+  /* Apply smooth transition effect */
+}
+
+
+.widget-post tbody td {
+  vertical-align: middle;
+}
+
+/* Mobile-responsive styles */
+@media (max-width: 768px) {
+
+  /* Adjust row height for smaller screens */
+  .widget-post tbody tr {
+    height: auto;
+    /* or set a smaller height */
+  }
+
+  /* Center-align contents in table cells on smaller screens */
+  .widget-post tbody td {
+    text-align: center;
+  }
+}
+
+.recent-news-events {
+  color: #000;
+  font-family: Reem Kufi;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.notes-section {
+  color: #000;
+  font-family: Reem Kufi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
@@ -1928,7 +2062,7 @@ section {
 }
 
 .footer .footer-info .logo img {
-  max-height: 40px;
+  max-height: 150px;
   margin-right: 6px;
 }
 
@@ -1965,7 +2099,7 @@ section {
 }
 
 .footer h4 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
@@ -2003,24 +2137,27 @@ section {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  font-size: 18px;
 }
 
 .footer .footer-links ul a:hover {
   color: #fff;
 }
 
-.footer .footer-contact p {
-  line-height: 26px;
+.footer .footer-contact {
+  /* line-height: 26px; */
+  font-size: 18px;
 }
 
 .footer .copyright {
   text-align: center;
+  font-size: 18px;
 }
 
 .footer .credits {
   padding-top: 4px;
   text-align: center;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .footer .credits a {
